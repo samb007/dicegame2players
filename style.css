@@ -1,0 +1,89 @@
+/* this is reset.css, basically resets all the defaults styles.*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+
+/* target all elements */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+html{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: blue;
+}
+img{
+    visibility: hidden;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 20px;
+    
+}
+
+body{
+    background: linear-gradient(to right, orange,red);
+    text-align: center;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.player-1-section{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    padding: 20px;
+    background-color: red;
+    border-radius: 20px;
+    /* background: red url('img/diceroll.png') center; */
+}
+
+.player-2-section{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 20px;
+    /* background:orange url('img/diceroll.png') center; */
+    
+    
+}
+.player-1-section, .player-2-section{
+    font-size: 30px;
+    
+}
+.wrapper{
+    border: 5px solid black;
+    border-width: 80%;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+p{
+    padding: 20px 0px;
+}
+.player-name{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.reset{
+    padding-bottom: 200px;
+}
+
+.active1{
+    background: red url('img/diceroll.png') center;
+}
+
+.active2{
+    background:orange url('img/diceroll.png') center;
+    
+}
